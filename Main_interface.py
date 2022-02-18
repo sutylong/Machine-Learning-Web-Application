@@ -5,10 +5,10 @@ from PIL import Image
 import plotly.express as px
 import os
 
-dirname = os.path.dirname('D:\\Programming\\Code Workplace\\Python\\MyProjects\\')
-filename = os.path.join(dirname,'ML_Web_App\\image\\ml.png' )
-image1 = Image.open(filename)
-img1 = st.image(image1,use_column_width=True)
+dirname = os.path.dirname('D:\\Programming\\Code Workplace\\Python\\MyProjects\\ML_Web_App\\')
+filename = os.path.join(dirname,'image\\ml.png' )
+image = Image.open(filename)
+img = st.image(image,use_column_width=True)
 
 
 # image = Image.open('D:\\Programming\\Code Workplace\\Python\\MyProjects\\ML_Web_App\\image\\ml.png')
@@ -24,7 +24,7 @@ choice = st.sidebar.selectbox('Select model...', model_select)
 ###################################################################
 
 if choice == 'Simple Linear Regression':
-    # img.empty()
+    img.empty()
 
     st.title("Welcome to Simple Linear Regression Application")
     st.subheader("Description")
@@ -75,7 +75,7 @@ if choice == 'Simple Linear Regression':
 ###################################################################
 
 elif choice == 'Multivariable Linear Regression':
-    # img.empty()
+    img.empty()
     st.title("Welcome to Multivariable Linear Regression Application")
     st.subheader("Description")
     st.write("""
@@ -145,7 +145,7 @@ elif choice == 'Multivariable Linear Regression':
 
 ###################################################################
 elif choice == 'Polynomial Regression':
-    # img.empty()
+    img.empty()
     st.info('Oops! Polynomial Regression is not available yet. Please come back later!')
 
 
@@ -309,21 +309,21 @@ elif choice == 'Decision Tree':
 
 ###################################################################
 elif choice == 'Logistic Regression':
-    # img.empty()
+    img.empty()
     st.info('Oops! Logistic Regression is not available yet. Please come back later!')
 
 
 
 ###################################################################
 elif choice == 'SVM':
-    # img.empty()
+    img.empty()
     st.info('Oops! SVM is not available yet. Please come back later!')
 
 
 
 ###################################################################
 elif choice == 'Naive Bayes':
-    # img.empty()
+    img.empty()
     st.info('Oops! Naive Bayes is not available yet. Please come back later!')
 
 
@@ -331,5 +331,5 @@ elif choice == 'Naive Bayes':
 
 ###################################################################
 elif choice == 'Random Forest':
-    # img.empty()
+    img.empty()
     st.info('Oops! Random Forest is not available yet. Please come back later!')
