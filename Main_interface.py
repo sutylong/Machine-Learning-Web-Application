@@ -156,7 +156,7 @@ elif choice == 'Polynomial Regression':
 ###################################################################
 
 elif choice == 'Decision Tree':
-    # img.empty()
+    img.empty()
     st.title("Welcome to Decision Tree Application")
     st.subheader("Description")
     st.write("""
